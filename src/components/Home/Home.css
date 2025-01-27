@@ -1,0 +1,208 @@
+/* --------- */
+/* Home section */
+/* --------- */
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#tsparticles {
+    position: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+}
+
+.home-header {
+    padding-top: 20px !important;
+}
+
+.home-section {
+    position: relative;
+    z-index: 1;
+    background-image: var(--image-gradient), url(../../Assets/home-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    text-align: left;
+    z-index: 10;
+}
+
+.button-container {
+    margin-top: 20px;
+    z-index: 10;
+    display: flex;
+    gap: 15px;
+}
+
+/* Remove underline for all buttons */
+.button,
+.button a {
+  font-size: 1em;
+  color: white;
+  background-color: #be6adf;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none !important; /* Force removal of underline */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none; /* Remove button border */
+  display: inline-block; /* Ensure proper alignment */
+}
+
+.button:hover,
+.button a:hover {
+  background-color: #9a4bb3;
+  color: white;
+  text-decoration: none !important; /* Force removal of underline on hover */
+}
+
+/* Remove underline for all links inside buttons */
+a {
+  text-decoration: none !important;
+  color: inherit; /* Inherit the button color */
+}
+
+.heading {
+    font-size: 2.4em !important;
+    padding-left: 50px !important;
+}
+
+.heading-name {
+    font-size: 2.5em !important;
+    padding-left: 45px !important;
+}
+
+.main-name {
+    color: #cd5ff8;
+}
+
+.Typewriter__wrapper {
+    font-size: 2.2em !important;
+    color: #be6adf !important;
+    font-weight: 600 !important;
+}
+
+.Typewriter__cursor {
+    font-size: 2.4em !important;
+    color: #b562d6 !important;
+}
+
+/* Default size for larger screens */
+.profile-circle {
+    height: 450px;
+    width: 450px;
+}
+  
+.profile-image {
+    max-height: 110%;
+    max-width: 110%;
+}
+  
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .profile-circle {
+        height: 350px !important;
+        width: 350px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 0 auto; /* Center the square horizontally */
+        border-radius: 0; /* Remove border radius to make it a square */
+    }
+    .profile-image {
+        width: 100% !important;
+        height: 100% !important;  /* Ensure the image fills the container */
+        object-fit: cover;       /* Cover the square without stretching */
+    }
+}
+
+  
+/* Small devices (phones, 576px and below) */
+@media (max-width: 576px) {
+    .profile-circle {
+        height: 100px;
+        width: 100px;
+        order: -1; /* Prioritize image on mobile */
+    }
+  
+    .profile-image {
+        max-height: 90%;
+        max-width: 90%;
+    }
+}
+  
+/* Extra small devices (phones, 375px and below) */
+@media (max-width: 375px) {
+    .profile-circle {
+        height: 100px;
+        width: 200px;
+        order: -1; /* Ensure image appears first */
+    }
+  
+    .profile-image {
+        max-height: 75%;
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+    .Typewriter__wrapper {
+        font-size: 1.4em !important;
+        font-weight: 500 !important;
+        position: absolute !important;
+    }
+    .Typewriter__cursor {
+        display: none !important;
+    }
+
+    .home-header {
+        padding-top: 5px !important;
+    }
+
+    .button {
+        margin-top: 19px;
+        font-size: 1em !important;
+        padding: 6px 12px;
+    }
+}

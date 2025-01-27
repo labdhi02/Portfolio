@@ -1,0 +1,168 @@
+/* Home Section */
+.home-section {
+    padding: 20px 20px 40px; /* Adjusted top padding */
+    background: linear-gradient(to bottom, #14162c, #1e1e2f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Content Alignment */
+.home-content {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Heading Styling */
+.heading {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: whitesmoke; /* White color */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Intro Text Styling */
+.intro-text {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: whitesmoke; /* White color */
+}
+/* Add margin before My Blogs heading */
+.home-content .heading:nth-of-type(2) {
+    margin-top: 40px; /* Adjust as needed */
+}
+
+/* Projects Container */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Project Image */
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Project Title */
+.project-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-title:hover {
+    color: #9a4bb3;
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.button {
+    font-size: 1em;
+    color: white;
+    background-color: #be6adf;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Removed underline */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #9a4bb3;
+    color: white;
+    text-decoration: none; /* Ensure underline is not added on hover */
+}
+
+/* Mobile Design - Tablet & Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr 1fr; /* 2 cards per row for tablets */
+    }
+
+    .heading {
+        font-size: 2.2em; /* Adjusted font size */
+    }
+
+    .intro-text {
+        font-size: 1.1em; /* Adjusted font size */
+    }
+
+    .project-card {
+        padding: 15px; /* Less padding */
+    }
+
+    .project-title {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+
+    .project-description {
+        font-size: 0.9em; /* Slightly smaller text for description */
+    }
+
+    .button {
+        font-size: 0.9em;
+        padding: 8px 18px;
+    }
+}
+
+/* Mobile Design - Small Screens (max-width: 576px) */
+@media (max-width: 576px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .project-card {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .heading {
+        font-size: 1.8em; /* Adjusted font size for small screens */
+    }
+
+    .intro-text {
+        font-size: 0.9em; /* Adjusted font size */
+    }
+
+    .project-title {
+        font-size: 1.2em; /* Smaller title for small screens */
+    }
+
+    .project-description {
+        font-size: 0.8em; /* Smaller description text */
+    }
+
+    .button {
+        font-size: 0.8em;
+        padding: 6px 14px;
+    }
+}

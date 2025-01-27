@@ -1,0 +1,57 @@
+/* --------- */
+/* Footer */
+/* --------- */
+.footer {
+  background-color: rgb(10, 4, 22);
+  position: relative; /* Ensure it's positioned normally within the page */
+  padding-top: 10px !important;
+  padding-bottom: 8px !important;
+  width: 100%; /* Ensure it spans the full width */
+  clear: both; /* Clear any floating elements */
+}
+
+.footer-copywright {
+  text-align: center !important;
+}
+
+.footer-body {
+  z-index: 1;
+  text-align: center !important;
+  padding: 0 10px; /* Add some padding to ensure content doesn't touch the sides */
+}
+
+@media (max-width: 767px) {
+  .footer-copywright {
+      text-align: center !important;
+  }
+
+  .footer-body {
+      text-align: center !important;
+      padding: 0 10px; /* Ensure proper padding on smaller screens */
+  }
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: white !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.footer-icons {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
+  display: flex; /* Use flexbox to align icons in a row */
+  justify-content: center; /* Align icons horizontally at the center */
+  gap: 15px; /* Space between icons */
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+
+.footer-icons .social-icons {
+  list-style-type: none;
+}
+
+.blockquote-footer {
+  color: #a588c0 !important;
+}

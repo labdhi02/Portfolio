@@ -1,0 +1,509 @@
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  color: white !important;
+}
+
+/* Circular image styling */
+.about-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Circle background color */
+  border-radius: 50%; /* Circular shape */
+  height: 450px; /* Circle size */
+  width: 450px; /* Circle size */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.about-img-container img {
+  border-radius: 50%; /* Make the image itself circular */
+  max-height: 110%; /* Increase image size */
+  max-width: 110%; /* Increase image size */
+}
+
+/* Professional skillset styling */
+.techstack-container {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.techstack-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.techstack-row {
+  justify-content: center;
+}
+
+.tech-icon-box {
+  background-color: #1e1e1e;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect on the tech icon box */
+.tech-icon-box:hover {
+  transform: scale(1.1); /* Scale up the box */
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  background-color: #333333;
+}
+
+.tech-icon-box svg {
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on icons to make them grow */
+.tech-icon-box:hover svg {
+  transform: scale(1.2);
+}
+
+.tech-name {
+  margin-top: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+.quote-card-view {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 1px !important;
+}
+
+.toolstack-container {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.toolstack-title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.toolstack-row {
+  justify-content: center;
+}
+
+.tool-icon-box {
+  background-color: #1e1e1e;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect on the tool icon box */
+.tool-icon-box:hover {
+  transform: scale(1.1); /* Scale up the box */
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  background-color: #333333;
+}
+
+.tool-icon-box svg {
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on icons to make them grow */
+.tool-icon-box:hover svg {
+  transform: scale(1.2);
+}
+
+.tool-name {
+  margin-top: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tool-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  color: white !important;
+}
+
+/* Education Section Styling */
+.education-container {
+  max-width: 900px;
+  width: 90%; /* Reduce width on smaller screens */
+  background-color: black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.education-heading {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #cd5ff8;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Timeline item */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  flex-wrap: wrap; /* Allow content to wrap on small screens */
+}
+
+/* Timeline dot */
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #cd5ff8; /* Purple circle */
+  border-radius: 50%;
+  position: absolute;
+  left: -10px; /* Position it to the left of the content */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Timeline Header */
+.timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.timeline-logo {
+  flex-shrink: 0;
+  width: 60px; /* Adjust logo size */
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.timeline-logo img {
+  width: 100%; /* Fill container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Avoid cropping */
+  border-radius: 10px;
+}
+
+.timeline-details h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.timeline-details h5 {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: white;
+}
+
+/* Content container */
+.timeline-content {
+  margin-left: 40px; /* To space out the content from the dot */
+  padding: 15px 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* Content takes up remaining space */
+  text-align: left; /* Align text to the left */
+}
+
+.timeline-content p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.timeline-date {
+  display: block;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: white;
+}
+.school-link {
+  color: #b8d1ea; /* Light blue color */
+  text-decoration: none;
+}
+
+.school-link:hover {
+  text-decoration: underline;
+}
+/* Responsive Design for Mobile Devices */
+@media (max-width: 767px) {
+  .education-container {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .education-heading {
+    font-size: 2rem; /* Smaller heading */
+    margin-bottom: 15px; /* Reduced margin */
+  }
+
+  .timeline {
+    padding-left: 15px;
+    border-left: 2px solid #cd5ff8;
+  }
+
+  .timeline-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align content to the left */
+    margin-bottom: 20px;
+  }
+
+  .timeline-header {
+    flex-direction: column; /* Stack logo and content vertically */
+    align-items: center;
+    text-align: center; /* Center content in small screens */
+  }
+
+  .timeline-logo {
+    width: 80px; /* Adjust logo size */
+    margin-bottom: 10px; /* Add space between logo and content */
+  }
+
+  .timeline-details h4 {
+    font-size: 1.3rem; /* Smaller text for smaller screens */
+  }
+
+  .timeline-content {
+    width: 100%; /* Full width content */
+    padding: 10px 15px; /* Adjust padding */
+    text-align: left; /* Align text to the left */
+    margin-left: 0; /* Remove margin to pull the content closer to the dot */
+  }
+
+  .timeline-content h4 {
+    font-size: 1.3rem; /* Smaller text */
+  }
+
+  .timeline-content h5,
+  .timeline-content p,
+  .timeline-date {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  /* Reduce dot size on small screens */
+  .timeline-dot {
+    width: 15px; /* Smaller dot */
+    height: 15px; /* Smaller dot */
+    left: -5px; /* Move the dot closer to the content */
+  }
+}
+
+/* Additional responsive design for larger tablets (Up to 1024px) */
+@media (max-width: 1024px) {
+  .education-container {
+    width: 95%; /* Slightly reduce width */
+  }
+
+  .timeline-header {
+    flex-direction: column; /* Stack logo and content vertically */
+    align-items: center;
+    text-align: center; /* Center content */
+  }
+
+  .timeline-logo {
+    width: 90px; /* Adjust logo size */
+    margin-bottom: 10px; /* Add space between logo and content */
+  }
+
+  .timeline-details h4 {
+    font-size: 1.2rem; /* Slightly larger font */
+  }
+
+  .timeline-content h4,
+  .timeline-content h5,
+  .timeline-content p {
+    font-size: 1.2rem;
+  }
+
+  /* Reduce dot size */
+  .timeline-dot {
+    width: 15px;
+    height: 15px;
+    left: -5px; /* Adjust position to reduce space between dot and content */
+  }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 767px) {
+  .toolstack-container {
+    padding: 15px;
+  }
+
+  .tool-icon-box svg {
+    font-size: 2rem;
+  }
+
+  .tool-name {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+  .about-section {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order for mobile */
+    padding-top: 100px !important;
+  }
+
+  .about-img-container {
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .techstack-container {
+    padding: 15px;
+  }
+
+  .tech-icon-box svg {
+    font-size: 2rem;
+  }
+
+  .tech-name {
+    font-size: 0.9rem;
+  }
+}
+
+/* Default layout for larger screens */
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  color: white !important;
+}
+
+/* Styling for the image container */
+.about-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.about-img-container img {
+  border-radius: 50%;
+  max-height: 110%;
+  max-width: 110%;
+}
+
+/* On larger screens, display image on the right and text on the left */
+@media (min-width: 768px) {
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-md-1 {
+    order: 1;
+  }
+
+  .order-md-2 {
+    order: 2;
+  }
+}
+
+/* Responsive styling for smaller screens */
+  /* Optional: Other adjustments for smaller screens */
+  .techstack-container {
+    padding: 15px;
+  }
+
+  .tech-icon-box svg {
+    font-size: 2rem;
+  }
+
+  .tech-name {
+    font-size: 0.9rem;
+  }
+
+/* General container styling */
+.about-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  color: white !important;
+  z-index: 1;  /* Ensure it is above the particles */
+}
+
+/* Ensure particles are behind the content */
+.particles-container {
+  z-index: -1; /* Send particles behind other elements */
+}
+
+/* Prevent particles from appearing in containers with backgrounds */
+.about-img-container, .techstack-container, .toolstack-container, .education-container {
+  position: relative;
+  z-index: 2; /* Keep content above particles */
+}
+
